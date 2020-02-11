@@ -89,6 +89,7 @@ public class LambdaDemoTest {
         System.out.println(sum);
     }
 
+
     @Test
     public void test8(){
         List<Integer> list = Arrays.asList(1,2,4,5,6);
