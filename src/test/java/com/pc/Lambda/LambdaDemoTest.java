@@ -81,4 +81,19 @@ public class LambdaDemoTest {
         List<Integer> list = Arrays.asList(1,2,4,5,6);
         list.stream().map(x->x+1).forEach(System.out::println);
     }
+
+    @Test
+    public void test7(){
+        List<Integer> list = Arrays.asList(1,2,4,5,6);
+        Integer sum = list.stream().reduce(0, (x, y) -> x + y);
+        System.out.println(sum);
+    }
+
+    @Test
+    public void test8(){
+        List<Integer> list = Arrays.asList(1,2,4,5,6);
+        Integer sum = list.stream().reduce(0, (x, y) -> x + y);
+        System.out.println(sum);
+    }
+
 }
