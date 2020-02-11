@@ -118,4 +118,10 @@ public class LambdaDemoTest {
         System.out.println(sum);
     }
 
+    @Test
+    public void test12(){
+        List<Integer> list = Arrays.asList(1,2,4,5,6);
+        Integer sum = list.stream().reduce(0, (x, y) -> x + y);
+        System.out.println(sum);
+    }
 }
