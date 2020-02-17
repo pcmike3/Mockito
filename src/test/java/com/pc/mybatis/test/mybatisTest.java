@@ -1,6 +1,7 @@
 package com.pc.mybatis.test;
 
 import com.pc.mybatis.dao.IUserDao;
+import com.pc.mybatis.domain.QueryVo;
 import com.pc.mybatis.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -49,21 +50,22 @@ public class mybatisTest {
     }
 
     @Test
-    public void testMybatis(){
+    public void testFindAll(){
 
         List<User> users = userDao.findAll();
         for (User user : users) {
             System.out.println(user);
         }
 
+
     }
 
     @Test
     public void testSave() {
         User user = new User();
-        user.setAddress("厦门");
-        user.setBirthday(new Date());
-        user.setSex("男");
+        user.setUserAddress("厦门");
+        user.setUserBirthday(new Date());
+        user.setUserSex("男");
         user.setUsername("zhaoqi");
         //5.使用代理对象执行方法
         userDao.saveUser(user);
@@ -78,11 +80,11 @@ public class mybatisTest {
     @Test
     public void testUpdate() {
         User user=new User();
-        user.setId(1);
         user.setUsername("liliu");
-        user.setSex("男");
-        user.setBirthday(new Date());
-        user.setAddress("河南");
+        user.setUserSex("1");
+        user.setUserBirthday(new Date());
+        user.setUserAddress("河南");
+        user.setUserId(1);
         //5.使用代理对象执行方法
         userDao.updateUser(user);
     }
@@ -108,5 +110,18 @@ public class mybatisTest {
     public void testFindTotal() {
         Integer total = userDao.findTotal();
         System.out.println(total);
+    }
+
+    @Test
+    public void testQueryVo() {
+        User user = new User();
+        user.setUsername("%li%");
+        QueryVo vo=new QueryVo();
+        vo.setUser(user);
+        List<User> users = userDao.findByQueryVo(vo);
+        for (User u:users){
+            System.out.println(u);
+        }
+
     }
 }

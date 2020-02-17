@@ -1,5 +1,6 @@
 package com.pc.mybatis.dao;
 
+import com.pc.mybatis.domain.QueryVo;
 import com.pc.mybatis.domain.User;
 
 import java.util.List;
@@ -12,4 +13,5 @@ public interface IUserDao {
     User findById(Integer id);
     List<User> findByName(String name);
     Integer findTotal();
+    List<User> findByQueryVo(QueryVo vo);
 }

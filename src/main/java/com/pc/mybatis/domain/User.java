@@ -1,63 +1,64 @@
 package com.pc.mybatis.domain;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class User implements Serializable {
-     private Integer id;
+
+public class User{
+
+     private Integer userId;
      private String username;
-     private Date birthday;
-     private String sex;
-     private String address;
+     private Date userBirthday;
+     private String userSex;
+     private String userAddress;
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", birthday=" + birthday +
-                ", sex='" + sex + '\'' +
-                ", address='" + address + '\'' +
-                '}';
-    }
+     @Override
+     public String toString() {
+          return "User{" +
+                  "userId=" + userId +
+                  ", username='" + username + '\'' +
+                  ", userBirthday=" + userBirthday +
+                  ", userSex='" + userSex + '\'' +
+                  ", userAddress='" + userAddress + '\'' +
+                  '}';
+     }
 
-    public Integer getId() {
-        return id;
-    }
+     public Integer getUserId() {
+          return userId;
+     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+     public void setUserId(Integer userId) {
+          this.userId = userId;
+     }
 
-    public String getUsername() {
-        return username;
-    }
+     public String getUsername() {
+          return username;
+     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+     public void setUsername(String username) {
+          this.username = username;
+     }
 
-    public Date getBirthday() {
-        return birthday;
-    }
+     public Date getUserBirthday() {
+          return userBirthday;
+     }
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
+     public void setUserBirthday(Date userBirthday) {
+          this.userBirthday = userBirthday;
+     }
 
-    public String getSex() {
-        return sex;
-    }
+     public String getUserSex() {
+          return userSex;
+     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
+     public void setUserSex(String userSex) {
+          this.userSex = userSex;
+     }
 
-    public String getAddress() {
-        return address;
-    }
+     public String getUserAddress() {
+          return userAddress;
+     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+     public void setUserAddress(String userAddress) {
+          this.userAddress = userAddress;
+     }
 }
