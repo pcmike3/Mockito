@@ -12,9 +12,9 @@
         <dataSource type="POOLED">
             <!-- 配置4个基本信息 -->
             <property name="driver" value="com.mysql.jdbc.Driver"></property>
-            <property name="url" value="jdbc:mysql://localhost:3306/test"></property>
-            <property name="username" value="root"></property>
-            <property name="password" value="123456"></property>
+            <property name="url" value="jdbc:mysql://172.28.80.126:3306/test"></property>
+            <property name="username" value="skill"></property>
+            <property name="password" value="skill"></property>
         </dataSource>
     </environment>
 </environments>

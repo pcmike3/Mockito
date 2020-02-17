@@ -5,8 +5,35 @@
 <!-- namespace写全限定类路径-->
 <mapper namespace="com.pc.mybatis.dao.IUserDao">
     <!-- 配置查询所有,id是方法的名称，和类中的方法保持一致
-     resultType表示将查询结果封装到哪个类中-->
+    parameterType表示输入类型
+     resultType表示将查询结果封装到哪个类中,返回类型-->
     <select id="findAll" resultType="com.pc.mybatis.domain.User">
-        select * from user;
+        select * from user
+    </select>
+
+    <!--配置保存-->
+    <insert id="saveUser" parameterType="com.pc.mybatis.domain.User">
+        insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <update id="updateUser" parameterType="com.pc.mybatis.domain.User">
+        update user set username=#{username},address=#{address},birthday=#{birthday},sex=#{sex}
+        where id=#{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+
+    <select id="findById" parameterType="int" resultType="com.pc.mybatis.domain.User">
+        select * from user where id =#{id}
+    </select>
+
+    <select id="findByName" parameterType="String" resultType="com.pc.mybatis.domain.User">
+        select * from user where username like #{name}
+    </select>
+
+    <select id="findTotal" resultType="int">
+        select count(*) from user
     </select>
 </mapper>
