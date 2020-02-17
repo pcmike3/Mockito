@@ -124,4 +124,8 @@ public class mybatisTest {
         }
 
     }
+    @Test
+    public void test(){
+        System.out.println(1);
+    }
 }
