@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--使用properties引用外部配置文件，要放在resources下，根目录就是resources-->
+    <properties resource="jdbcConfig.properties"></properties>
+    <!--使用typeAliases之后，后面的parameterType可以使用别名，不区分大小写-->
+    <typeAliases>
+        <!--使用alias-->
+        <!--<typeAlias type="com.pc.mybatis.domain.User" alias="user"></typeAlias>-->
+        <!--使用package指定一整个包的别名-->
+        <package name="com.pc.mybatis.domain"/>
+    </typeAliases>
+    <!-- 配置环境 -->
+<environments default="mysql"><!-- 叫什么无所谓只是名字，和下面的id保持一致 -->
+    <environment id="mysql">
+        <!-- 事务类型 为jdbc -->
+        <transactionManager type="JDBC"></transactionManager>
+        <!-- 配置数据源，也叫连接源 -->
+        <dataSource type="POOLED">
+            <!-- 配置4个基本信息，可以使用${}引用外部配置文件 -->
+            <property name="driver" value="${driver}"></property>
+            <property name="url" value="${url}"></property>
+            <property name="username" value="${username}"></property>
+            <property name="password" value="${password}"></property>
+        </dataSource>
+    </environment>
+</environments>
+    <!-- 指定映射配置文件的位置 -->
+    <mappers>
+        <!--<mapper resource="com/pc/mybatis/dao/IUserDao.xml"/>-->
+        <package name="com.pc.mybatis.dao"/>
+    </mappers>
+</configuration>

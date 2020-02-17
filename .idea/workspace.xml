@@ -2,7 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82b6e0cd-82dd-4da3-a1d6-51fd023ac2d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pcmike.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d:axis.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pc/mybatis/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pc/mybatis/domain/QueryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pc/mybatis/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/pc/mybatis/dao/IUserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbcConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pc/mockito/MockitoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pc/mybatis/test/mybatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/pc/mybatis/dao/IUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/pc/mybatis/dao/IUserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/pc/mybatis/domain/QueryVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/pc/mybatis/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/jdbcConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/sqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/pc/mockito/MockitoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/pc/mybatis/test/mybatisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pc/Lambda/LambdaDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pc/Lambda/LambdaDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pc/mockito/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pc/mockito/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/mockito.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/pc/Lambda/LambdaDemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/pc/Lambda/LambdaDemoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/pc/mockito/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/pc/mockito/test.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
