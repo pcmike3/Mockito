@@ -399,3 +399,47 @@
 2020-02-17 15:45:59,559 978    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2e3fc542]
 2020-02-17 15:45:59,570 989    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2e3fc542]
 2020-02-17 15:45:59,570 989    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 775931202 to pool.
+2020-02-17 17:20:23,963 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-02-17 17:20:24,062 99     [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VFS
+2020-02-17 17:20:24,062 99     [           main] DEBUG org.apache.ibatis.io.JBoss6VFS  - JBoss 6 VFS API is not available in this environment.
+2020-02-17 17:20:24,062 99     [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VirtualFile
+2020-02-17 17:20:24,063 100    [           main] DEBUG       org.apache.ibatis.io.VFS  - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-02-17 17:20:24,063 100    [           main] DEBUG       org.apache.ibatis.io.VFS  - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-02-17 17:20:24,064 101    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/domain
+2020-02-17 17:20:24,064 101    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/domain
+2020-02-17 17:20:24,091 128    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: QueryVo.class
+2020-02-17 17:20:24,091 128    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: User.class
+2020-02-17 17:20:24,091 128    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/domain
+2020-02-17 17:20:24,092 129    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/domain/QueryVo.class
+2020-02-17 17:20:24,092 129    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/domain/QueryVo.class
+2020-02-17 17:20:24,092 129    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   4 
+2020-02-17 17:20:24,093 130    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/domain/User.class
+2020-02-17 17:20:24,093 130    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/domain/User.class
+2020-02-17 17:20:24,094 131    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   4 L
+2020-02-17 17:20:24,094 131    [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.pc.mybatis.domain.QueryVo matches criteria [is assignable to Object]
+2020-02-17 17:20:24,095 132    [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.pc.mybatis.domain.User matches criteria [is assignable to Object]
+2020-02-17 17:20:24,138 175    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-02-17 17:20:24,138 175    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-02-17 17:20:24,139 176    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-02-17 17:20:24,139 176    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-02-17 17:20:24,142 179    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/dao
+2020-02-17 17:20:24,142 179    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/dao
+2020-02-17 17:20:24,143 180    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.class
+2020-02-17 17:20:24,143 180    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.xml
+2020-02-17 17:20:24,143 180    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/dao
+2020-02-17 17:20:24,143 180    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/dao/IUserDao.class
+2020-02-17 17:20:24,143 180    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/dao/IUserDao.class
+2020-02-17 17:20:24,144 181    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   4    findAll ()Ljava/util/List; 	Signature 0()Ljava/util/List<Lcom/pc/mybatis/domain/User;>; saveUser (Lcom/pc/mybatis/domain/User;)V 
+2020-02-17 17:20:24,146 183    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/dao/IUserDao.xml
+2020-02-17 17:20:24,147 184    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/pcmike/Downloads/mockito/target/classes/com/pc/mybatis/dao/IUserDao.xml
+2020-02-17 17:20:24,147 184    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2020-02-17 17:20:24,148 185    [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.pc.mybatis.dao.IUserDao matches criteria [is assignable to Object]
+2020-02-17 17:20:24,355 392    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-02-17 17:20:25,534 1571   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1884122755.
+2020-02-17 17:20:25,535 1572   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@704d6e83]
+2020-02-17 17:20:25,551 1588   [           main] DEBUG c.mybatis.dao.IUserDao.findAll  - ==>  Preparing: select * from user; 
+2020-02-17 17:20:25,581 1618   [           main] DEBUG c.mybatis.dao.IUserDao.findAll  - ==> Parameters: 
+2020-02-17 17:20:25,615 1652   [           main] DEBUG c.mybatis.dao.IUserDao.findAll  - <==      Total: 4
+2020-02-17 17:20:25,616 1653   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@704d6e83]
+2020-02-17 17:20:25,633 1670   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@704d6e83]
+2020-02-17 17:20:25,633 1670   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 1884122755 to pool.

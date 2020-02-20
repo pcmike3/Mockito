@@ -30,6 +30,7 @@
     <!-- 指定映射配置文件的位置 -->
     <mappers>
         <!--<mapper resource="com/pc/mybatis/dao/IUserDao.xml"/>-->
+        <!--使用package链接整个包下的Dao文件-->
         <package name="com.pc.mybatis.dao"/>
     </mappers>
 </configuration>
