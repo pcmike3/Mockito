@@ -5,7 +5,7 @@
     <!--id随便起一个名字，targetRuntime指定mybatis版本，defaultModelType默认就是conditional-->
     <context id="database" targetRuntime="MyBatis3" defaultModelType="conditional">
         <!-- 生成的实体类会自动实现Serializable接口 -->
-        <!--<plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
         <commentGenerator>
             <property name="suppressDate" value="true"/> <!-- 是否生成注释代时间戳,true表示不要 -->
             <property name="suppressAllComments" value="false"/><!-- 是否生成注释代时间戳,true表示不要 -->
@@ -25,18 +25,18 @@
 
 
         <!-- 生成Model对象，entity -->
-        <javaModelGenerator targetPackage="com.pc.mybatisGenerator.model.auto"
+        <javaModelGenerator targetPackage="com.pc.mybatis.model.auto"
                             targetProject="src/main/java">
             <!-- 是否要去掉空格 -->
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!-- 生成sqlXML文件路径配置 -->
-        <sqlMapGenerator targetPackage="com.pc.mybatisGenerator.autoMapperXML"
+        <sqlMapGenerator targetPackage="com.pc.mybatis.autoMapperXML"
                          targetProject="src/main/resources"/>
 
         <!-- 生成动态代理接口 -->
-        <javaClientGenerator targetPackage="com.pc.mybatisGenerator.model.mapper"
+        <javaClientGenerator targetPackage="com.pc.mybatis.model.mapper"
                              targetProject="src/main/java" type="XMLMAPPER"/>
 
         <!-- 配置表信息 -->
