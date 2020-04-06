@@ -2,7 +2,10 @@ package com.pc.Lambda;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -74,6 +77,10 @@ public class LambdaDemoTest {
         Optional<Double> reduce = list1.stream().map(Employee::getSalary).reduce(Double::sum);
         System.out.println(count);
         System.out.println(reduce);
+        System.out.println("----");
+        Collections.sort(list1, Comparator.comparingInt(Employee::getAge));
+        System.out.println(list1);
+
     }
 
     @Test
@@ -99,9 +106,10 @@ public class LambdaDemoTest {
 
     @Test
     public void test9(){
-        List<Integer> list = Arrays.asList(1,2,4,5,6);
-        Integer sum = list.stream().reduce(0, (x, y) -> x + y);
-        System.out.println(sum);
+        List list = new ArrayList();
+        list.add(1);
+        list.add(2);
+        System.out.println(list.contains(3));
     }
 
     @Test
@@ -120,9 +128,7 @@ public class LambdaDemoTest {
 
     @Test
     public void test12(){
-        List<Integer> list = Arrays.asList(1,2,4,5,6);
-        Integer sum = list.stream().reduce(0, (x, y) -> x + y);
-        System.out.println(sum);
+
     }
 
 }

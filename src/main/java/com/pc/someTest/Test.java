@@ -1,12 +1,14 @@
 package com.pc.someTest;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.config.RequestConfig;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
+import com.jcraft.jsch.ChannelSftp;
 
-import java.io.IOException;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Vector;
 
 /**
  * @author panchi
@@ -17,27 +19,34 @@ import java.io.IOException;
 
 public class Test {
 
-    public static void main(String[] args) throws IOException {
-//        for (int i=1;i<10;++i) {
-//            System.out.println(
-//                    UUID.randomUUID().toString().replace("-","").toUpperCase());
-//        }
+    public static void main(String[] args) throws Exception {
+        SFTPChannel channel = new SFTPChannel();
+        Map<String,String> map = new HashMap<>();
+        map.put("host","112.13.96.148");
+        map.put("port","32222");
+        map.put("username","zhhl");
+        map.put("password","nb8w1U55Vye3K+Hh");
+        ChannelSftp sftp = channel.getChannel(map, 100000);
 
-//        Employee e1 = new Employee("mike",1,"a");
-//        Employee e2 = new Employee("jack",2,"b");
-//        User user = new User();
-//        BeanUtils.copyProperties(e1,user);
-//        System.out.println(user);
-//
-//        List<Employee> list = Arrays.asList(e1,e2);
-//        List<User> output = new ArrayList<>();
-        HttpGet httpGet = new HttpGet("www.baidu.com");
-        RequestConfig request = null;
-        httpGet.setConfig(request);
+        Vector ls = sftp.ls("/");
+        String[] s = ls.toString().split(" ");
+        String s1 = s[s.length-1];
+        String s2 = s1.substring(0, s1.length() - 1);
+        System.out.println("----------");
+        System.out.println(s2);
+        System.out.println("----------");
 
-        CloseableHttpClient closeableHttpClient = HttpClientBuilder.create().build();
-        HttpResponse httpResponse = closeableHttpClient.execute(httpGet);
+        InputStream in = sftp.get(s2);
+        byte[] buffer = new byte[1024];
+        OutputStream out = new FileOutputStream(new File("/Users/pcmike/Desktop/"+s2));
+        int len=0;
+        while((len=in.read(buffer))!=-1){
+            out.write(buffer,0,len);
+        }
 
+        in.close();
+        out.close();
+        channel.closeChannel();
     }
 }
 
