@@ -2,6 +2,12 @@ package com.pc.someTest;
 
 import org.junit.Test;
 
+import java.io.UnsupportedEncodingException;
+import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * @author panchi
  * @Type Test.java
@@ -24,8 +30,24 @@ public class someTest {
 
     @Test
     public void test2(){
-        String a="asb";
-        System.out.println(a.charAt(0));
+        BigDecimal aNull = new BigDecimal("0.2");
+        System.out.println(aNull.toString());
+    }
+
+    @Test
+    public void test3(){
+        Calendar ca = Calendar.getInstance();
+        ca.setTime(new Date());
+            int i = ca.get(Calendar.DAY_OF_WEEK);
+        System.out.println(i);
+    }
+
+    @Test
+    public void test4() throws UnsupportedEncodingException {
+        String a = "das&jd";
+        System.out.println(Arrays.toString(a.getBytes()));
+        System.out.println(Arrays.toString(a.getBytes("UTF-8")));
+
     }
 }
 
