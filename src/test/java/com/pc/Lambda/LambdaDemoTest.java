@@ -128,7 +128,7 @@ public class LambdaDemoTest {
 
     @Test
     public void test12(){
-
+        List list = new ArrayList();
     }
 
 }
