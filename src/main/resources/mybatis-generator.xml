@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!--id随便起一个名字，targetRuntime指定mybatis版本，defaultModelType默认就是conditional-->
+    <context id="database" targetRuntime="MyBatis3" defaultModelType="conditional">
+        <!-- 生成的实体类会自动实现Serializable接口 -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <commentGenerator>
+            <property name="suppressDate" value="true"/> <!-- 是否生成注释代时间戳,true表示不要 -->
+            <property name="suppressAllComments" value="false"/><!-- 是否生成注释代时间戳,true表示不要 -->
+        </commentGenerator>
+
+        <!--数据库连接信息 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://172.28.80.126:3306/test"
+                        userId="skill"
+                        password="skill"/>
+
+        <!-- true：把数据表中的decimal和numeric转为java中的igDecimal
+             false：把数据表中的decimal和numeric转为java中的Integer-->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+
+        <!-- 生成Model对象，entity -->
+        <javaModelGenerator targetPackage="com.pc.mybatis.model.auto"
+                            targetProject="src/main/java">
+            <!-- 是否要去掉空格 -->
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 生成sqlXML文件路径配置 -->
+        <sqlMapGenerator targetPackage="com.pc.mybatis.autoMapperXML"
+                         targetProject="src/main/resources"/>
+
+        <!-- 生成动态代理接口 -->
+        <javaClientGenerator targetPackage="com.pc.mybatis.model.mapper"
+                             targetProject="src/main/java" type="XMLMAPPER"/>
+
+        <!-- 配置表信息 -->
+        <table tableName="user"/>
+
+    </context>
+
+</generatorConfiguration>
