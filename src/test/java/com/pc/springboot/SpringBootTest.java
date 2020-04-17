@@ -137,5 +137,10 @@ public class SpringBootTest {
         client.getHostConfiguration().setHost("http://www.baidu.com",80);
     }
 
+    @Test
+    public void test8(){
+
+    }
+
 
 }
