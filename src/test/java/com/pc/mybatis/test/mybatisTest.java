@@ -126,6 +126,12 @@ public class mybatisTest {
     }
     @Test
     public void test(){
-        System.out.println(1);
+        User u = new User();
+        u.setUsername("1");
+        System.out.println(u);
+        u.setUsername(null);
+        System.out.println(u);
     }
+
+
 }
