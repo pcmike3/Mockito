@@ -233,6 +233,7 @@ public class HelloController {
         message.setTo("panchi@cmhi.chinamobile.com");
         mailSender.send(message);
         System.out.println("haha");
+        System.out.println("dd");
     }
 
 }
