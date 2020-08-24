@@ -232,6 +232,7 @@ public class HelloController {
         message.setFrom("602042981@qq.com");
         message.setTo("panchi@cmhi.chinamobile.com");
         mailSender.send(message);
+        System.out.println("haha");
     }
 
 }
